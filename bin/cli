@@ -25,10 +25,10 @@
 var resolve = require( 'path' ).resolve;
 var resolveSync = require( 'resolve' ).sync;
 var glob = require( 'glob' );
-var readFileSync = require( '@stdlib/fs/read-file' ).sync;
+var readFileSync = require( '@stdlib/fs-read-file' ).sync;
 var CLI = require( '@stdlib/cli' );
-var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
-var cwd = require( '@stdlib/process/cwd' );
+var isString = require( '@stdlib/assert-is-string' ).isPrimitive;
+var cwd = require( '@stdlib/process-cwd' );
 
 
 // MAIN //

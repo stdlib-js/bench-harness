@@ -35,7 +35,7 @@ tape( 'main export is a boolean', function test( t ) {
 
 tape( 'if a browser environment, the value is `false`', function test( t ) {
 	var canEmitExit = proxyquire( './../lib/utils/can_emit_exit.js', {
-		'@stdlib/assert/is-browser': true
+		'@stdlib/assert-is-browser': true
 	});
 	t.strictEqual( canEmitExit, false, 'value is false' );
 	t.end();
@@ -43,7 +43,7 @@ tape( 'if a browser environment, the value is `false`', function test( t ) {
 
 tape( 'if not a browser environment and an environment cannot exit, the value is `false`', function test( t ) {
 	var canEmitExit = proxyquire( './../lib/utils/can_emit_exit.js', {
-		'@stdlib/assert/is-browser': false,
+		'@stdlib/assert-is-browser': false,
 		'./can_exit.js': false
 	});
 	t.strictEqual( canEmitExit, false, 'value is false' );
@@ -52,7 +52,7 @@ tape( 'if not a browser environment and an environment cannot exit, the value is
 
 tape( 'if not a browser environment and an environment can exit (e.g., Node.js), the value is `true`', function test( t ) {
 	var canEmitExit = proxyquire( './../lib/utils/can_emit_exit.js', {
-		'@stdlib/assert/is-browser': false,
+		'@stdlib/assert-is-browser': false,
 		'./can_exit.js': true
 	});
 	t.strictEqual( canEmitExit, true, 'value is true' );
