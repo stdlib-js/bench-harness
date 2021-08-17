@@ -1632,7 +1632,7 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 
 [nodejs-writable-stream]: https://nodejs.org/api/stream.html#stream_writable_streams
 
-[@stdlib/streams/node/transform]: https://github.com/stdlib-js/streams-utils-transform
+[@stdlib/streams/node/transform]: https://github.com/stdlib-js/streams-node-transform
 
 </section>
 
