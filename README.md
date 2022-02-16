@@ -1411,6 +1411,8 @@ npm install -g @stdlib/bench-harness
 ```
 
 </section>
+<!-- CLI usage documentation. -->
+
 
 <section class="usage">
 
@@ -1607,7 +1609,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
