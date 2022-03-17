@@ -57,6 +57,7 @@
     "@stdlib/process-cwd": "^0.0.x",
     "@stdlib/regexp-eol": "^0.0.x",
     "@stdlib/streams-node-transform": "^0.0.x",
+    "@stdlib/string-format": "^0.0.x",
     "@stdlib/string-from-code-point": "^0.0.x",
     "@stdlib/string-replace": "^0.0.x",
     "@stdlib/string-trim": "^0.0.x",
