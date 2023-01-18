@@ -1654,9 +1654,9 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/bench-harness/main/LICENSE
 
-[tap]: http://testanything.org/tap-version-13-specification.html
+[tap]: https://testanything.org/tap-version-13-specification.html
 
-[yaml]: http://www.yaml.org/
+[yaml]: https://yaml.org/
 
 [nodejs-stream]: https://nodejs.org/api/stream.html
 
