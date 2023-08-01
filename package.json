@@ -59,7 +59,7 @@
     "@stdlib/streams-node-transform": "^0.0.7",
     "@stdlib/string-base-replace": "^0.0.2",
     "@stdlib/string-base-trim": "^0.0.2",
-    "@stdlib/string-format": "^0.0.3",
+    "@stdlib/error-tools-fmtprodmsg": "^0.0.2",
     "@stdlib/string-from-code-point": "^0.0.9",
     "@stdlib/time-tic": "^0.0.7",
     "@stdlib/time-toc": "^0.0.8",
