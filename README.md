@@ -45,38 +45,31 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/bench-harness
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+-   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-bench = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/bench-harness@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var bench = require( 'path/to/vendor/umd/bench-harness/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/bench-harness@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.bench;
-})();
-</script>
+var bench = require( '@stdlib/bench-harness' );
 ```
 
 <a name="bench"></a>
@@ -1353,16 +1346,11 @@ TODO
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-assert-is-nan@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-sin@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/bench-harness@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var randu = require( '@stdlib/random-base-randu' );
+var isnan = require( '@stdlib/math-base-assert-is-nan' );
+var sin = require( '@stdlib/math-base-special-sin' );
+var bench = require( '@stdlib/bench-harness' );
 
 var opts = {
     'iterations': 1e6,
@@ -1412,11 +1400,6 @@ bench( 'sin', opts, function benchmark( b ) {
     b.pass( 'benchmark finished' );
     b.end();
 });
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -1425,7 +1408,172 @@ bench( 'sin', opts, function benchmark( b ) {
 
 <!-- Section for describing a command-line interface. -->
 
+* * *
 
+<section class="cli">
+
+## CLI
+
+<section class="installation">
+
+## Installation
+
+To use as a general utility, install the CLI package globally
+
+```bash
+npm install -g @stdlib/bench-harness-cli
+```
+
+</section>
+<!-- CLI usage documentation. -->
+
+
+<section class="usage">
+
+### Usage
+
+```text
+Usage: bench [options] <glob> ...
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+  -r,    --require module      Load module before running benchmarks.
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- CLI usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+### Notes
+
+-   Running benchmark files does **not** require using the command-line interface. For example, to run a single file containing benchmarks,
+
+    ```bash
+    $ node /path/to/benchmark.js
+    ```
+
+-   To load one or more modules **before** running benchmarks, set the `-r` flag one or more times. For example,
+
+    ```bash
+    $ bench -r foo -r bar 'benchmark/*.js'
+    ```
+
+    the modules `foo` and `bar` will both be loaded **before** any benchmarks matching the glob `benchmark/*.js`. The `-r` flag behaves exactly like `require`, and modules are resolved relative to the current working directory. To load local modules, use relative paths.
+
+    ```bash
+    $ bench -r ./foo/bar.js -r ./beep/boop/bap 'benchmark/*.js'
+    ```
+
+    Note that `-r` modules are loaded **before** running benchmarks regardless of order. Hence,
+
+    ```bash
+    $ bench -r foo -r bar 'benchmark/*.js'
+    ```
+
+    and
+
+    ```bash
+    $ bench -r foo 'benchmark/*.js' -r bar
+    ```
+
+    behave the same.
+
+    Depending on the preloaded module, a module may support parameterization via environment variables, command-line options, and/or configuration files.
+
+-   To perform shell expansion on systems supporting globbing, do not quote provided globs. 
+
+    ```bash
+    $ bench benchmark/*.js
+    ```
+
+    Beware, however, that globbing via shell expansion may result in shell argument lists which exceed length limits. To prevent shell expansion, wrap globs in quotes.
+
+    ```bash
+    $ bench 'benchmark/*.js'
+    $ bench "benchmark/*.js"
+    ```
+
+</section>
+
+<!-- /.notes -->
+
+<!-- CLI usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```bash
+$ bench ./examples/index.js
+```
+
+will generate [TAP][tap] output similar to the following
+
+```text
+TAP version 13
+# Math.sin
+  ---
+  iterations: 1000000
+  elapsed: 0.107631765
+  rate: 9290937.484858675
+  ...
+ok 1 benchmark finished
+# Math.sin
+  ---
+  iterations: 1000000
+  elapsed: 0.100319363
+  rate: 9968165.368035682
+  ...
+ok 2 benchmark finished
+# Math.sin
+  ---
+  iterations: 1000000
+  elapsed: 0.095116262
+  rate: 10513449.31952856
+  ...
+ok 3 benchmark finished
+# sin
+  ---
+  iterations: 1000000
+  elapsed: 0.173696195
+  rate: 5757178.503536016
+  ...
+ok 4 benchmark finished
+# sin
+  ---
+  iterations: 1000000
+  elapsed: 0.158544701
+  rate: 6307369.42762912
+  ...
+ok 5 benchmark finished
+# sin
+  ---
+  iterations: 1000000
+  elapsed: 0.157709895
+  rate: 6340756.234730865
+  ...
+ok 6 benchmark finished
+#
+1..6
+# total 6
+# pass  6
+#
+# ok
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
 
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
@@ -1530,7 +1678,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [nodejs-writable-stream]: https://nodejs.org/api/stream.html#stream_writable_streams
 
-[@stdlib/streams/node/transform]: https://github.com/stdlib-js/streams-node-transform/tree/umd
+[@stdlib/streams/node/transform]: https://github.com/stdlib-js/streams-node-transform
 
 </section>
 
