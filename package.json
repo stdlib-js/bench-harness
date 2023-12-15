@@ -31,8 +31,7 @@
   "scripts": {
     "test": "make test",
     "test-cov": "make test-cov",
-    "examples": "make examples",
-    "benchmark": "make benchmark"
+    "examples": "make examples"
   },
   "homepage": "https://stdlib.io",
   "repository": {
@@ -87,8 +86,7 @@
     "proxyquire": "^2.0.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
-    "tap-min": "git+https://github.com/Planeshifter/tap-min.git",
-    "@stdlib/bench-harness": "^0.1.2"
+    "tap-min": "git+https://github.com/Planeshifter/tap-min.git"
   },
   "engines": {
     "node": ">=0.10.0",
