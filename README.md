@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import bench from 'https://cdn.jsdelivr.net/gh/stdlib-js/bench-harness@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/bench-harness/tags). For example,
+
+```javascript
 import bench from 'https://cdn.jsdelivr.net/gh/stdlib-js/bench-harness@v0.2.0-esm/index.mjs';
 ```
 
@@ -1338,7 +1343,7 @@ TODO
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
 import isnan from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-assert-is-nan@esm/index.mjs';
 import sin from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-sin@esm/index.mjs';
-import bench from 'https://cdn.jsdelivr.net/gh/stdlib-js/bench-harness@v0.2.0-esm/index.mjs';
+import bench from 'https://cdn.jsdelivr.net/gh/stdlib-js/bench-harness@esm/index.mjs';
 
 var opts = {
     'iterations': 1e6,
