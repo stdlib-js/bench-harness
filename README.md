@@ -292,16 +292,16 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/bench-harness-cli.svg
 [npm-url]: https://npmjs.org/package/@stdlib/bench-harness-cli
 
-[test-image]: https://github.com/stdlib-js/bench-harness@v0.2.0/actions/workflows/test.yml/badge.svg?branch=v0.2.0
-[test-url]: https://github.com/stdlib-js/bench-harness@v0.2.0/actions/workflows/test.yml?query=branch:v0.2.0
+[test-image]: https://github.com/stdlib-js/bench-harness/actions/workflows/test.yml/badge.svg?branch=v0.2.0
+[test-url]: https://github.com/stdlib-js/bench-harness/actions/workflows/test.yml?query=branch:v0.2.0
 
-[coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/bench-harness@v0.2.0/main.svg
-[coverage-url]: https://codecov.io/github/stdlib-js/bench-harness@v0.2.0?branch=main
+[coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/bench-harness/main.svg
+[coverage-url]: https://codecov.io/github/stdlib-js/bench-harness?branch=main
 
 <!--
 
-[dependencies-image]: https://img.shields.io/david/stdlib-js/bench-harness@v0.2.0.svg
-[dependencies-url]: https://david-dm.org/stdlib-js/bench-harness@v0.2.0/main
+[dependencies-image]: https://img.shields.io/david/stdlib-js/bench-harness.svg
+[dependencies-url]: https://david-dm.org/stdlib-js/bench-harness/main
 
 -->
 
@@ -312,22 +312,22 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
 
-[cli-section]: https://github.com/stdlib-js/bench-harness@v0.2.0#cli
-[cli-url]: https://github.com/stdlib-js/bench-harness@v0.2.0/tree/cli
-[@stdlib/bench-harness]: https://github.com/stdlib-js/bench-harness@v0.2.0/tree/main
+[cli-section]: https://github.com/stdlib-js/bench-harness#cli
+[cli-url]: https://github.com/stdlib-js/bench-harness/tree/cli
+[@stdlib/bench-harness]: https://github.com/stdlib-js/bench-harness/tree/main
 
 [umd]: https://github.com/umdjs/umd
 [es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 
-[deno-url]: https://github.com/stdlib-js/bench-harness@v0.2.0/tree/deno
-[deno-readme]: https://github.com/stdlib-js/bench-harness@v0.2.0/blob/deno/README.md
-[umd-url]: https://github.com/stdlib-js/bench-harness@v0.2.0/tree/umd
-[umd-readme]: https://github.com/stdlib-js/bench-harness@v0.2.0/blob/umd/README.md
-[esm-url]: https://github.com/stdlib-js/bench-harness@v0.2.0/tree/esm
-[esm-readme]: https://github.com/stdlib-js/bench-harness@v0.2.0/blob/esm/README.md
-[branches-url]: https://github.com/stdlib-js/bench-harness@v0.2.0/blob/main/branches.md
+[deno-url]: https://github.com/stdlib-js/bench-harness/tree/deno
+[deno-readme]: https://github.com/stdlib-js/bench-harness/blob/deno/README.md
+[umd-url]: https://github.com/stdlib-js/bench-harness/tree/umd
+[umd-readme]: https://github.com/stdlib-js/bench-harness/blob/umd/README.md
+[esm-url]: https://github.com/stdlib-js/bench-harness/tree/esm
+[esm-readme]: https://github.com/stdlib-js/bench-harness/blob/esm/README.md
+[branches-url]: https://github.com/stdlib-js/bench-harness/blob/main/branches.md
 
-[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/bench-harness@v0.2.0/main/LICENSE
+[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/bench-harness/main/LICENSE
 
 [tap]: https://testanything.org/tap-version-13-specification.html
 
