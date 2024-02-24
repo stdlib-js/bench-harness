@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import bench from 'https://cdn.jsdelivr.net/gh/stdlib-js/bench-harness@esm/index.mjs';
+import bench from 'https://cdn.jsdelivr.net/gh/stdlib-js/bench-harness@v0.2.1-esm/index.mjs';
 ```
 
 <a name="bench"></a>
@@ -1338,7 +1338,7 @@ TODO
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
 import isnan from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-assert-is-nan@esm/index.mjs';
 import sin from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-sin@esm/index.mjs';
-import bench from 'https://cdn.jsdelivr.net/gh/stdlib-js/bench-harness@esm/index.mjs';
+import bench from 'https://cdn.jsdelivr.net/gh/stdlib-js/bench-harness@v0.2.1-esm/index.mjs';
 
 var opts = {
     'iterations': 1e6,
