@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import bench from 'https://cdn.jsdelivr.net/gh/stdlib-js/bench-harness@deno/mod.js';
+import bench from 'https://cdn.jsdelivr.net/gh/stdlib-js/bench-harness@v0.2.2-deno/mod.js';
 ```
 
 <a name="bench"></a>
@@ -1333,7 +1333,7 @@ TODO
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
 import isnan from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-assert-is-nan@deno/mod.js';
 import sin from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-sin@deno/mod.js';
-import bench from 'https://cdn.jsdelivr.net/gh/stdlib-js/bench-harness@deno/mod.js';
+import bench from 'https://cdn.jsdelivr.net/gh/stdlib-js/bench-harness@v0.2.2-deno/mod.js';
 
 var opts = {
     'iterations': 1e6,
