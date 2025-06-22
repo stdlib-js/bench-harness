@@ -4,7 +4,19 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-06-02)
+## Unreleased (2025-06-22)
+
+<section class="issues">
+
+### Closed Issues
+
+This release closes the following issue:
+
+[#7440](https://github.com/stdlib-js/stdlib/issues/7440)
+
+</section>
+
+<!-- /.issues -->
 
 <section class="commits">
 
@@ -12,6 +24,7 @@
 
 <details>
 
+-   [`875aa06`](https://github.com/stdlib-js/stdlib/commit/875aa068bc5e55770dc692daf8debd3cff8d86e7) - **chore:** fix JavaScript lint errors [(#7443)](https://github.com/stdlib-js/stdlib/pull/7443) _(by Daniel Hernandez Gomez, Athan Reines)_
 -   [`4a70790`](https://github.com/stdlib-js/stdlib/commit/4a707903dfef7c2b56216000165706497d19a251) - **style:** add missing spaces _(by Philipp Burckhardt)_
 
 </details>
@@ -24,8 +37,10 @@
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
+-   Athan Reines
+-   Daniel Hernandez Gomez
 -   Philipp Burckhardt
 
 </section>
