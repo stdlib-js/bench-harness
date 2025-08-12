@@ -3,36 +3,8 @@
   "version": "0.2.2",
   "description": "Benchmark harness.",
   "license": "Apache-2.0",
-  "author": {
-    "name": "The Stdlib Authors",
-    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
-  },
-  "contributors": [
-    {
-      "name": "The Stdlib Authors",
-      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
-    }
-  ],
-  "bin": {
-    "bench": "./bin/cli"
-  },
-  "main": "./lib",
-  "browser": {
-    "process": "process/"
-  },
-  "directories": {
-    "benchmark": "./benchmark",
-    "doc": "./docs",
-    "example": "./examples",
-    "lib": "./lib",
-    "test": "./test"
-  },
-  "types": "./docs/types",
-  "scripts": {
-    "test": "make test",
-    "test-cov": "make test-cov",
-    "examples": "make examples"
-  },
+  "type": "module",
+  "main": "./mod.js",
   "homepage": "https://stdlib.io",
   "repository": {
     "type": "git",
@@ -41,69 +13,6 @@
   "bugs": {
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
-  "dependencies": {
-    "@stdlib/assert-has-own-property": "^0.2.2",
-    "@stdlib/assert-is-boolean": "^0.2.2",
-    "@stdlib/assert-is-browser": "^0.2.2",
-    "@stdlib/assert-is-function": "^0.2.2",
-    "@stdlib/assert-is-node-writable-stream-like": "^0.2.2",
-    "@stdlib/assert-is-null": "^0.2.2",
-    "@stdlib/assert-is-plain-object": "^0.2.2",
-    "@stdlib/assert-is-positive-integer": "^0.2.2",
-    "@stdlib/assert-is-string": "^0.2.2",
-    "@stdlib/cli-ctor": "^0.2.2",
-    "@stdlib/fs-read-file": "^0.2.2",
-    "@stdlib/process-cwd": "^0.2.2",
-    "@stdlib/regexp-eol": "^0.2.2",
-    "@stdlib/streams-node-transform": "^0.2.2",
-    "@stdlib/string-base-replace": "^0.2.2",
-    "@stdlib/string-base-trim": "^0.2.2",
-    "@stdlib/error-tools-fmtprodmsg": "^0.2.2",
-    "@stdlib/string-from-code-point": "^0.2.2",
-    "@stdlib/time-tic": "^0.2.2",
-    "@stdlib/time-toc": "^0.2.2",
-    "@stdlib/utils-copy": "^0.2.2",
-    "@stdlib/utils-define-nonenumerable-read-only-accessor": "^0.2.3",
-    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.2",
-    "@stdlib/utils-define-property": "^0.2.4",
-    "@stdlib/utils-inherit": "^0.2.2",
-    "@stdlib/utils-noop": "^0.2.2",
-    "@stdlib/utils-omit": "^0.2.2",
-    "@stdlib/utils-pick": "^0.2.2",
-    "glob": "^7.0.5",
-    "resolve": "^1.1.7",
-    "@stdlib/error-tools-fmtprodmsg": "^0.2.2"
-  },
-  "devDependencies": {
-    "@stdlib/assert-contains": "^0.2.2",
-    "@stdlib/assert-is-regexp": "^0.2.2",
-    "@stdlib/assert-is-windows": "^0.2.2",
-    "@stdlib/buffer-from-string": "^0.2.2",
-    "@stdlib/math-base-assert-is-nan": "^0.2.2",
-    "@stdlib/math-base-special-cos": "^0.3.0",
-    "@stdlib/math-base-special-sin": "^0.3.0",
-    "@stdlib/process-exec-path": "^0.2.2",
-    "@stdlib/random-base-randu": "^0.2.1",
-    "proxyquire": "^2.0.0",
-    "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
-    "istanbul": "^0.4.1",
-    "tap-min": "git+https://github.com/Planeshifter/tap-min.git"
-  },
-  "engines": {
-    "node": ">=0.10.0",
-    "npm": ">2.7.0"
-  },
-  "os": [
-    "aix",
-    "darwin",
-    "freebsd",
-    "linux",
-    "macos",
-    "openbsd",
-    "sunos",
-    "win32",
-    "windows"
-  ],
   "keywords": [
     "stdlib",
     "standard",
