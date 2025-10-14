@@ -4,15 +4,15 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-08-25)
+## Unreleased (2025-10-14)
 
 <section class="issues">
 
 ### Closed Issues
 
-A total of 2 issues were closed in this release:
+A total of 3 issues were closed in this release:
 
-[#7440](https://github.com/stdlib-js/stdlib/issues/7440), [#7553](https://github.com/stdlib-js/stdlib/issues/7553)
+[#7440](https://github.com/stdlib-js/stdlib/issues/7440), [#7553](https://github.com/stdlib-js/stdlib/issues/7553), [#8213](https://github.com/stdlib-js/stdlib/issues/8213)
 
 </section>
 
@@ -24,6 +24,7 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`32e2924`](https://github.com/stdlib-js/stdlib/commit/32e2924cea84c650a1bbde85ea6e4143c6e7c3b4) - **chore:** fix JavaScript lint errors [(#8214)](https://github.com/stdlib-js/stdlib/pull/8214) _(by Vara Rahul Rajana, Athan Reines)_
 -   [`7add020`](https://github.com/stdlib-js/stdlib/commit/7add0201c13e56a0381926ccfd4073c84eaf2ed4) - **test:** use standardized assertion messages and fix lint errors _(by Philipp Burckhardt)_
 -   [`07f7c05`](https://github.com/stdlib-js/stdlib/commit/07f7c0522c73e6ad9505e1d45035ae439344200d) - **test:** use standardized assertion messages and fix lint errors _(by Philipp Burckhardt)_
 -   [`0f7607a`](https://github.com/stdlib-js/stdlib/commit/0f7607a1d5bc88b5ee38d5091725678eafd304f6) - **docs:** remove trailing whitespace _(by Philipp Burckhardt)_
@@ -42,12 +43,13 @@ A total of 2 issues were closed in this release:
 
 ### Contributors
 
-A total of 4 people contributed to this release. Thank you to the following contributors:
+A total of 5 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Daniel Hernandez Gomez
 -   Philipp Burckhardt
 -   Siddhesh waje
+-   Vara Rahul Rajana
 
 </section>
 
