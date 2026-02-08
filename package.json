@@ -58,7 +58,7 @@
     "@stdlib/streams-node-transform": "^0.2.3",
     "@stdlib/string-base-replace": "^0.2.3",
     "@stdlib/string-base-trim": "^0.2.3",
-    "@stdlib/string-format": "^0.2.3",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.3",
     "@stdlib/string-from-code-point": "^0.2.3",
     "@stdlib/time-tic": "^0.2.3",
     "@stdlib/time-toc": "^0.2.3",
