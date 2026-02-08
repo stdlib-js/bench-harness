@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import bench from 'https://cdn.jsdelivr.net/gh/stdlib-js/bench-harness@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/bench-harness/tags). For example,
+
+```javascript
 import bench from 'https://cdn.jsdelivr.net/gh/stdlib-js/bench-harness@v0.2.3-deno/mod.js';
 ```
 
@@ -1333,7 +1338,7 @@ TODO
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
 import isnan from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-assert-is-nan@deno/mod.js';
 import sin from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-sin@deno/mod.js';
-import bench from 'https://cdn.jsdelivr.net/gh/stdlib-js/bench-harness@v0.2.3-deno/mod.js';
+import bench from 'https://cdn.jsdelivr.net/gh/stdlib-js/bench-harness@deno/mod.js';
 
 var opts = {
     'iterations': 1e6,
