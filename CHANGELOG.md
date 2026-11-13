@@ -4,15 +4,15 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-11-03)
+## Unreleased (2026-11-13)
 
 <section class="issues">
 
 ### Closed Issues
 
-This release closes the following issue:
+A total of 2 issues were closed in this release:
 
-[#10355](https://github.com/stdlib-js/stdlib/issues/10355)
+[#10355](https://github.com/stdlib-js/stdlib/issues/10355), [#16548](https://github.com/stdlib-js/stdlib/issues/16548)
 
 </section>
 
@@ -24,6 +24,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`de93323`](https://github.com/stdlib-js/stdlib/commit/de93323eddec8a839dcb23302c39c25faf32d92c) - **style:** remove unused ESLint disable directive [(#16552)](https://github.com/stdlib-js/stdlib/pull/16552) _(by Pawan Hirumina, Athan Reines)_
 -   [`5df50ac`](https://github.com/stdlib-js/stdlib/commit/5df50ac0f9c50b825e81aae2e10a3d843692e140) - **style:** disable lint rule [(#10356)](https://github.com/stdlib-js/stdlib/pull/10356) _(by nickolaif-svg, Athan Reines)_
 
 </details>
@@ -36,9 +37,10 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   Pawan Hirumina
 -   nickolaif-svg
 
 </section>
